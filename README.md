@@ -10,3 +10,6 @@ jupyter nbconvert --config=/path/to/htmlexport.py testnb.ipynb
 ```
 
 The output folder is defined in the config file.
+
+Also, if you add 'extra_class': 'whatevercssclass' to the metadata of a cell, it'll wrap that cell in a div having those css classes.
+(Useful for adding custom style, or say hiding a cell at CSS time.)

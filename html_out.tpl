@@ -1,6 +1,16 @@
 {%- extends 'basic.tpl' -%}
 {% from 'mathjax.tpl' import mathjax %}
 
+{%- block any_cell scoped -%}
+{%- if cell.metadata.extra_class != None -%}
+<div class="{{ cell.metadata.extra_class }}">
+{{ super() }}
+</div>
+{%- else -%}
+{{ super() }}
+{%- endif -%}
+{%- endblock any_cell -%}
+
 {%- block header -%}
 <!DOCTYPE html>
 <html>
