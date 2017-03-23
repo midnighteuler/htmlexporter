@@ -3,7 +3,6 @@
 
 {%- block header -%}
 <!DOCTYPE html>
-test
 <html>
 <head>
 {%- block html_head -%}
